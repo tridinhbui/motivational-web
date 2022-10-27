@@ -177,7 +177,7 @@
             ctx.moveTo(100, 0);
             ctx.scale(0.75, 0.75);
             ctx.font = "10px 微软雅黑,Verdana";
-            ctx.fillText("NK click đây =)", 23, 10);
+            ctx.fillText("Tap this button", 23, 10);
             ctx.restore();
         },
         clear: function() {
@@ -477,8 +477,8 @@
             var ctx = s.tree.ctx;
             ctx.save();
             ctx.beginPath();
-            ctx.fillStyle = 'rgb(35, 31, 32)';
-            ctx.shadowColor = 'rgb(35, 31, 32)';
+            ctx.fillStyle = 'rgb(234, 31, 4)';
+            ctx.shadowColor = 'rgb(198, 2, 5)';
             ctx.shadowBlur = 2;
             ctx.moveTo(p.x, p.y);
             ctx.arc(p.x, p.y, s.radius, 0, 2 * Math.PI);

@@ -3,8 +3,8 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="icon" type="image/png" href="image/khanh.jpg">
-    <title>♥ </title>
+    <link rel="icon" type="image/png" href="image/tri_bui.jpeg">
+    <title> Chase your dream </title>
     <link type="text/css" rel="stylesheet" href="./renxi/default.css">
     <script type="text/javascript" src="./renxi/jquery.min.js"></script>
     <script type="text/javascript" src="./renxi/jscex.min.js"></script>
@@ -17,13 +17,12 @@
     <script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
     <style type="text/css">
         <!-- .STYLE1 {
-            color: #eb457a
+        color: #eb457a
         }
-        
+
         body {
-            background-image: url('image/khanh.jpg');
+            background-image: url('image/tri_bui.jpeg');
         }
-        
         -->
     </style>
 
@@ -31,34 +30,32 @@
 
 <body>
     <audio controls autoplay="autoplay">
-					<source src="music/I-Do-911.mp3" type="audio/mp3" />
-			</audio>
+        <source src="music/unstoppable.mp3" type="audio/mp3" />
+    </audio>
     <div id="wrap">
         <div id="text">
             <div id="code">
                 <font color="#eb457a"><span class="say">Hello</span><br>
                     <span class="say"> </span><br>
-                    <span class="say"> just to let you know </span><br>
+                    <span class="say"> I think I need to try harder </span><br>
                     <span class="say"> hmmm....</span><br>
-                    <span class="say"> I think it is time to say this seriously </span><br>
-                    <span class="say"> It is difficult to say in Vietnamese =))) </span><br>
-                    <span class="say"> anh yêu em à=))  nooo </span><br>
-                    <span class="say"> hay tớ thích cậu =)) no no no </span><br>
-                    <span class="say"> Cho dễ: I like you </span><br>
-		    <span class="say"> a lot... :)</span><br>
-		    <span class="say"> also, you are a great motivation for me to work hard every day. </span><br>
+                    <span class="say"> Everyday </span><br>
+                    <span class="say"> Try to learn more </span><br>
+                    <span class="say"> Travel more </span><br>
+                    <span class="say"> And increasingly growing myself </span><br>
+                    <span class="say"> Every single moment </span><br>
+                    <span class="say"> also, my dream is a great motivation for me to work hard every day. </span><br>
                     <span class="say"> 3 </span><br>
                     <span class="say"> 2 </span><br>
                     <span class="say"> 1 </span><br>
-                    <span class="say"> ---- Bấm cái nút dưới này nhé ---- </span><br>
-                    <a href="https://tridinhbui.github.io/projectK/" class="button"> Nk bấm vào đây đii^^</a>
+                    <a href="https://tridinhbui.github.io/projectK/" class="button"> Tap this button</a>
                 </font>
                 </p>
             </div>
         </div>
         <div id="clock-box">
             <span class="STYLE1"></span>
-            <font color="#eb457a"> I will be back to Vietnam soon</font>
+            <font color="#eb457a"> I will be back to Vietnam soon, to follow my dreams</font>
             <span class="STYLE1"> - in ......</span>
             <div id="clock"></div>
         </div>
@@ -71,7 +68,7 @@
     </script>
 
     <script>
-        (function() {
+        (function () {
             var canvas = $('#canvas');
 
             if (!canvas[0].getContext) {
@@ -86,7 +83,7 @@
             var opts = {
                 seed: {
                     x: width / 2 - 20,
-                    color: "rgb(190, 26, 37)",
+                    color: "rgb(255, 128, 7)",
                     scale: 2
                 },
                 branch: [
@@ -124,7 +121,7 @@
             var foot = tree.footer;
             var hold = 1;
 
-            canvas.click(function(e) {
+            canvas.click(function (e) {
                 var offset = canvas.offset(),
                     x, y;
                 x = e.pageX - offset.left;
@@ -135,7 +132,7 @@
                     canvas.unbind("mousemove");
                     canvas.removeClass('hand');
                 }
-            }).mousemove(function(e) {
+            }).mousemove(function (e) {
                 var offset = canvas.offset(),
                     x, y;
                 x = e.pageX - offset.left;
@@ -143,7 +140,7 @@
                 canvas.toggleClass('hand', seed.hover(x, y));
             });
 
-            var seedAnimate = eval(Jscex.compile("async", function() {
+            var seedAnimate = eval(Jscex.compile("async", function () {
                 seed.draw();
                 while (hold) {
                     $await(Jscex.Async.sleep(10));
@@ -159,21 +156,21 @@
                 }
             }));
 
-            var growAnimate = eval(Jscex.compile("async", function() {
+            var growAnimate = eval(Jscex.compile("async", function () {
                 do {
                     tree.grow();
                     $await(Jscex.Async.sleep(10));
                 } while (tree.canGrow());
             }));
 
-            var flowAnimate = eval(Jscex.compile("async", function() {
+            var flowAnimate = eval(Jscex.compile("async", function () {
                 do {
                     tree.flower(2);
                     $await(Jscex.Async.sleep(10));
                 } while (tree.canFlower());
             }));
 
-            var moveAnimate = eval(Jscex.compile("async", function() {
+            var moveAnimate = eval(Jscex.compile("async", function () {
                 tree.snapshot("p1", 240, 0, 610, 680);
                 while (tree.move("p1", 500, 0)) {
                     foot.draw();
@@ -188,7 +185,7 @@
                 canvas.css("background", "none");
             }));
 
-            var jumpAnimate = eval(Jscex.compile("async", function() {
+            var jumpAnimate = eval(Jscex.compile("async", function () {
                 var ctx = tree.ctx;
                 while (true) {
                     tree.ctx.clearRect(0, 0, width, height);
@@ -198,7 +195,7 @@
                 }
             }));
 
-            var textAnimate = eval(Jscex.compile("async", function() {
+            var textAnimate = eval(Jscex.compile("async", function () {
                 var together = new Date();
                 together.setFullYear(2022, 05, 08);
                 together.setHours(0);
@@ -214,7 +211,7 @@
                 }
             }));
 
-            var runAsync = eval(Jscex.compile("async", function() {
+            var runAsync = eval(Jscex.compile("async", function () {
                 $await(seedAnimate());
                 $await(growAnimate());
                 $await(flowAnimate());

@@ -1,15 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("image/khanh.jpg");
+    background-image: url("image/tri_bui.jpeg");
     font-size: 14px;
     font-family: '微软雅黑', '宋体', sans-serif;
-    color: #c72375;
+    color: #f7d80e;
     overflow: auto
 }
 
 a {
-    color: rgb(120, 12, 124);
+    color: rgb(233, 183, 55);
     font-size: 14px;
 }
 
@@ -31,7 +31,7 @@ a {
     left: 60px;
     top: 80px;
     position: absolute;
-    color: rgb(133, 13, 127);
+    color: rgb(223, 44, 28);
 }
 
 #code {
@@ -58,7 +58,7 @@ a {
 
 #clock .digit {
     font-size: 64px;
-    color: pink;
+    color: rgb(227, 29, 62);
 }
 
 #canvas {
@@ -88,9 +88,9 @@ a {
 }
 
 a.button {
-    background-color: #d03de4;
+    background-color: #d53f28;
     border: none;
-    color: rgb(248, 239, 248);
+    color: rgb(240, 140, 17);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
